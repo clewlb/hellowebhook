@@ -2,6 +2,7 @@ var path = require('path');
 var app = require(path.join(__dirname, '../app'));
 var Promise = require('promise');
 var logging = require(path.join(__dirname, 'logging'));
+var constants = require(path.join(__dirname, '../constants'));
 
 var database = require(path.join(__dirname, '../models/database'));
 var DD = require(path.join(__dirname, '../models/designDocs'));
@@ -246,7 +247,15 @@ function putInitData(data) {
                 return Promise.reject(err);
             })
             .then(function(status) {
-                return updateMsgDoc(msgDoc, status.data);
+            	if (status.ok == 200) {
+            		return updateMsgDoc(msgDoc, status.data);
+            	} else {
+            		return Promise.reject({
+            			err: 400,
+            			msg: "Invalid Endpoint"
+            		});
+            	}
+                
             })
             .catch(function(err) {
                 return Promise.reject(err);
