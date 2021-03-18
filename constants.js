@@ -1,0 +1,32 @@
+var constants = {
+    SYSTEM_ERROR: 'SYSTEM ERROR',
+    SYSTEM_ERROR_MSG_EN: 'System Error',
+    COMMUNICATION_ERROR: 'COMMUNICATION ERROR',
+    COMMUNICATION_ERROR_MSG_EN: 'Communication Error',
+    UNAUTHORIZED: 'Unauthorized',
+    UNAUTHORIZED_MSG: 'Unauthorized',
+    CRYPTO_ERROR: 'CRYPTO ERROR',
+    CRYPTO_ERROR_MSG: 'Crypto Error',
+    INVALID_DATA: 'INVALID DATA',
+    INVALID_DATA_MSG_EN: 'Invalid Data',
+    NOT_FOUND: 'Not Found',
+    NOT_FOUND_MSG: 'Not Found',
+    EXISTING_DATA: 'Existing Data',
+    EXISTING_DATA_MSG_EN: 'Existing Data',
+    DATABASE_ERROR: 'Database Error',
+    DATABASE_ERROR_MSG_EN: 'Database Error',
+    DATABASE_PUT_ERROR: 'Database PUT Error',
+    DATABASE_PUT_ERROR_MSG: 'Database PUT Error',
+    DATABASE_GET_ERROR: 'Database GET Error',
+    DATABASE_GET_ERROR_MSG: 'Database GET Error',
+    DATABASE_VERIFY_ERROR: 'Database Verify Error',
+    DATABASE_VERIFY_ERROR_MSG: 'Database Verify Error',
+    DATABASE_INSERTUPDATE_ERROR: 'Database Insert Update Error',
+    DATABASE_INSERTUPDATE_ERROR_MSG: 'Database Insert Update Error',
+    DATABASE_VIEW_ERROR: 'Database View Error',
+    DATABASE_VIEW_ERROR_MSG: 'Database View Error',
+    DATABASE_FIND_ERROR: 'Database Find Error',
+    DATABASE_FIND_ERROR_MSG: 'Database Find Error'
+};
+
+module.exports = constants;
